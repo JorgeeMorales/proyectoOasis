@@ -1,0 +1,41 @@
+<!-- Una division con nombre contenedor principal que muestra la vista de index cuando se invoca -->
+<div id="contenedorPrincipal">
+    <!-- Division con estilo login que se modifica en el css -->
+    <div class="login">
+        <!-- Manda un texto tipo titulo centrado -->
+        <h1 class="text-center">Ingresa tus credenciales</h1>
+        <!-- Crea un formulario -->
+        <form>
+            <!-- Crea una division que pide sea llenado -->
+            <div class="form-group was-validated">
+                <!-- Crea un titulo para el input que muestra Nombre de Usuario -->
+                <label class="form-label" for="nombreDeUsuario">Nombre de Usuario</label>
+                <!-- Crea el bloque de texto donde pondremos el nombre de usuario, es requerido -->
+                <input class="form-control" type="text" id="nombreDeUsuario" required>
+                <!-- Si el input esta vacio se muestra esta division con el texto -->
+                <div class="invalid-feedback">
+                    Ingresa tu nombre de usuario
+                </div>
+            </div>
+            <!-- Crea una division que pide sea llenado -->
+            <div class="form-group was-validated mb-3">
+                <!-- Crea un titulo para el input que muestra Contraseña -->
+                <label class="form-label" for="contrasenia">Contrase&ntilde;a</label>
+                <!-- Crea el bloque de texto donde pondremos el nombre de usuario, es requerido -->
+                <input class="form-control" type="password" id="contrasenia" required>
+                <!-- Si el input esta vacio se muestra esta division con el texto -->
+                <div class="invalid-feedback">
+                    Ingresa tu contrase&ntilde;a
+                </div>
+            </div>
+            <!-- Crea un link con estilos de boton el cual inicia sesion -->
+            <a>
+                <button type="button" class="btn btn-outline-success mb-3 w-100" onclick="ingreso();">Iniciar Sesi&oacute;n</button>
+            </a>
+            <!-- Crea un link con estilos de boton el cual regresa la vista completa de index -->
+            <a>
+                <button type="button" class="btn btn-secondary w-100" onclick="regresarPantallaAnterior();">Regresar</button>
+            </a>
+        </form>
+    </div>
+</div>

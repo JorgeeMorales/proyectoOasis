@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.datte input{
+    background-color: #036B9E;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.datte select{
+    background-color: #036B9E;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/*.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+a {
+    text-decoration:none;
+    color:#11C119;
+}
+.rainbow-button {
+    width:calc(175px + 6px);
+    height:60px;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:24px;
+    font-weight:bold;
+}
+.rainbow-button:after {
+    content:attr(alt);
+    width:175px;
+    height:50px;
+    background-color:white; /*Cambiar el Color mi wey*/
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position:20vw;
+    }
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-5 {
+    width: 360px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: #036B9E;
+    background:#036B9E 100%;
+}
+.btn-5:hover {
+    color: #036B9E;
+    background: transparent;
+    box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #036B9E;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+.btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+/*Otro*/
+
+.custom-btn1 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-51 {
+    width: 360px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: #11C119;
+    background:#11C119 100%;
+}
+.btn-51:hover {
+    color: #11C119;
+    background: transparent;
+    box-shadow:none;
+}
+.btn-51:before,
+.btn-51:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #11C119;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+.btn-51:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn-51:hover:before,
+.btn-51:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+/*Otro*/
+
+.custom-btn2 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-52 {
+    width: 200px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: #036B9E;
+    background:#036B9E 100%;
+}
+.btn-52:hover {
+    color: #036B9E;
+    background: transparent;
+    box-shadow:none;
+}
+.btn-52:before,
+.btn-52:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #036B9E;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+.btn-52:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn-52:hover:before,
+.btn-52:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+/*.datte button{
+    padding: 12px 24px;
+    background-color: #11C119;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 6px 0 #11C119;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:active{
+    transform: translateY(6px);
+    box-shadow: 0 3px 0 #11C119;
+}*/
+.datte label{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+}
+
+body{
+    margin-left: 80px;
+    margin-top: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+main{
+    padding: 20px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #F2F2F2; /*036B9E Color de la Nav Mi Rey*/
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+.icon__menu{
+    width: 930px;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transform: translateX(10px);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.icon__menu i{
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    color: #0a1a2a;
+}
+.icon__menu h1{
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+}
+.icon__navegacion nav a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+/*
+Colores Dark
+Morado = #510583
+Azul   = #036B9E
+Gris    = #384044
+Gris Claro = #DEDEDE
+Verde   = #1C8F05
+Verde Fuerte = #126900
+Marron claro = #C6BB3C
+Narranja = #e93f33
+Verde Claro = #11C119
+*/
+
+.menu__side{
+    width: 80px;
+    height: 100%;
+    background: #11C119; /*036B9E Color de la Barra Lateral Mi Rey*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #11C119;/*036B9E Color de la Barra Lateral Mi Rey*/
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.name__page{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name__page i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.options__menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.options__menu a:hover{
+    color: white;
+}
+
+.options__menu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a.selected{
+    color: #fff;
+}
+
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/*Clases para usar en JavaScript*/
+
+.body_move{
+    margin-left: 250px;
+}
+
+.menu__side_move{
+    width: 250px;
+}
+
+
+@media screen and (max-width: 760px){
+    .body_move{
+        margin-left: 0px;
+    }
+
+    .menu__side_move{
+        width: 80px;
+        left: -80px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    height: 200px;
+    /*background-color: #036B9E;*/
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #00ccff;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

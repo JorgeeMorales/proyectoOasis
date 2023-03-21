@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oasis</title>
+        <link rel="stylesheet" href="style/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Sytle/Estilo.css">
+        <link rel="stylesheet" href="Sytle/EstiloReserva.css">
+        <link rel="shortcut icon" href="../../Resursos/Png.png">
+
+        <link rel="stylesheet" type="text/css" href="style/css/mycss.css">
+        <link type="text/css" rel="stylesheet" href="js/gft/gft.css">
+        <link rel="shortcut icon" href="resources/unnamed.png">
+        <script src="js/iconos.js" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    </head>
+    <body id="body">
+
+        <header>
+            <div class="icon__menu">
+                <i class="fas fa-bars"  id="btn_open"></i>
+                <h1 class="m-5"><img style="width: 120px; height: 120px;" src="resources/oasis_logo-removebg-preview.png">O A S I S</h1>
+
+                <!-- comment <a style="float: right;" class="m-5" href="modules/Modulo Iniciar Sesion/vista_IniciarSesion.html"></i>Cerrar Sesion</a>
+                <a style="" class="m-3" href="modules/Modulo Iniciar Sesion/vista_IniciarSesion.html"></i>Cerrar Sesion</a>
+                <a style="" class="m-3" href="modules/Modulo Iniciar Sesion/vista_IniciarSesion.html"></i>Cerrar Sesion</a>-->
+            </div>
+            <div class="icon__navegacion">
+                <nav class="menu m" style="float: right;">
+                    <a href="#" class="m-2">Inicio</a>
+                    <a href="#" class="m-2">Conocenos</a>
+                    <!-- comment <a href="#">Blog</a>-->
+                    <a href="#"class="m-2">Contacto</a>
+                </nav>
+            </div>
+
+
+        </header>
+
+        <div class="menu__side" id="menu_side">
+
+            <div class="name__page">
+
+                <p style="font-family:century gothic; "><img style="width: 36px; height: 36px;" src="resources/oasis_logo-removebg-preview.png">OASIS</p>
+            </div>
+
+
+            <div class="options__menu">	
+                <a href="index.html" class="selected" style="text-decoration:none">
+                    <div class="option">
+                        <i class="fas fa-home" title="Inicio"></i>
+                        <h4>Inicio</h4>
+                    </div>
+                </a>
+
+                <a class="nav-link" onclick="cargarModuloReservaciones();" style="text-decoration:none">
+                    <div class="option">
+                        <i class="fa-solid fa-user"></i>
+                        <h4>Reservaciones</h4>
+                    </div>
+                </a>
+
+                <a class="nav-link" onclick="cargarModuloHabitaciones();" style="text-decoration:none">
+                    <div class="option">
+                        <i class="fa-solid fa-users"></i>
+                        <h4>Habitaciones</h4>
+                    </div>
+                </a>
+
+                <a class="nav-link" onclick="cargarModuloMateriales();" style="text-decoration:none">
+                    <div class="option">
+                        <i class="fa-solid fa-toolbox"></i>
+                        <h4>Productos</h4>
+                    </div>
+                </a>
+                
+                <a class="nav-link" onclick="cargarModuloHabitacionesAdmin();" style="text-decoration:none">
+                    <div class="option">
+                        <i class="fa-solid fa-toolbox"></i>
+                        <h4>Gestión de Habitaciones</h4>
+                    </div>
+                </a>
+
+                <a href="#" style="text-decoration:none">
+                    <div class="option">
+                        <i class="fa-solid fa-glass-water-droplet"></i>
+                        <h4>Empleado</h4>
+                    </div>
+                </a>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="container-fluid" id="contenedorPrincipal" style="margin-top: 100px; width: 100%;">
+            <!-- Dentro de este div se cargarán todas los módulos de manera dinámica -->
+            <div class="datte">
+                <!-- comment <div style='float: left; margin: 5px;width:175px; ' class=" row col-lg-3 form-floating  " >
+                    <input id="txtFechaN" type="date"  class="mt-2 form-control">
+                    <label for="txtFechaN" class="mt-2 ">Legada</label>
+                </div><!-- comment -->
+                <div style='float: left; margin: 5px;width:270px ' class=" row col-lg-4 form-floating  " >
+                    <input id="txtFechaN" type="date"  class="mt-2 form-control">
+                    <label for="txtFechaN" class="mt-2 ">Salida</label>
+                </div>
+                <div style='float: left; margin: 5px;width:270px ' class=" row col-lg-4 form-floating  " >
+                    <select class="form-select form-select-sm col-md-6 mt-2 form-control" id="txtGenero" name="txtGenero">
+                        <option value="" >1</option>
+                        <option value="M" >2</option>
+                        <option value="M" >3</option>
+                        <option value="M" >4</option>
+                        <option value="M" >5</option>
+                        <option value="M" >6</option>
+                        <option value="M" >7</option>
+                        <option value="M" >8</option>
+                    </select>
+                    <label for="txtFechaN" class="mt-2 ">Noches</label>
+                </div>
+                <div style='float: left; margin: 5px;width:270px ' class=" row col-lg-4 form-floating  " >
+                    <select class="form-select form-select-sm col-md-6 mt-2 form-control" id="txtGenero" name="txtGenero">
+                        <option value="" >1</option>
+                        <option value="M" >2</option>
+
+                    </select>
+                    <label for="txtFechaN" class="mt-2 ">Adultos</label>
+                </div>
+                <!-- comment<div style='float: left; margin: 5px;width:175px; ' class=" row col-lg-3 form-floating  " >
+                    <select class="form-select form-select-sm col-md-6 mt-2 form-control" id="txtGenero" name="txtGenero">
+                        <option value="" >1</option>
+                        <option value="M" >2</option>
+                    </select>
+                <!-- comment<label for="txtFechaN" class="mt-2 ">Niños</label>
+            </div> -->
+                <div style='float: left; margin: 5px;width:270px;' class="m-2"  >
+                    <a href="#" class="rainbow-button" alt="Reservar"></a>
+                </div>
+
+                <img src="resources/vista1.jpg"class="m-1" style="width: 100%;">
+                <div> 
+                    <div><!-- Aqui va el Texto -->
+                        <br>
+                        <br>
+                        <!-- comment<center><h3><strong>Hoteles PARADISE: ALL-FUN Inclusive® </strong></h3></center>
+                        <br>
+                        <center><p>Agregamos la diversión al “Todo Incluido” con nuestro innovador<strong> All-Fun Inclusive®</strong>,
+                                un concepto de turismo sostenible que ofrece más de 200 experiencias.
+                            </p></center>
+
+                        <center><p>El principal beneficio es que al hospedarte en <strong>Hoteles PARADISE</strong> tienes acceso ilimitado a los 
+                                parques de <strong>Grupo PARADISE</strong>, así como a los ferries de Cancún a Isla Mujeres de PARADISE Xailing.</p></center>
+
+                        <center><p>La transportación redonda a nuestros parques y al aeropuerto es parte de este concepto único, que ofrece más que alimentos y bebidas.
+                                <strong>Hoteles PARADISE</strong> cuenta con un <strong>Colectivo GastronómicO</strong> conformado por celebrity chefs nacionales e internacionales
+                                para deleitarte con experiencias culinarias premium.</p></center>
+
+                        <center><p>El concepto <strong>All-Fun Inclusive®</strong> de <strong>Hoteles PARADISE</strong> tiene matices distintos en cada hotel y según la categoría elegida.
+                                Para ver los beneficios de cada uno, sigue navegando. </p></center>-->
+                    </div>
+                    <div><!-- Aqui va las fotos -->
+                        <br><br>
+                        <center><h3><strong>NUESTROS SUITES </strong></h3></center>
+                        <br><br>
+                        <div style='float: left; margin: 5px;width:370px; ' class="m-2 row col-lg-3 form-floating  " >
+                            <img src="resources/habitacion1.jpg">
+                            <div>
+                                <center><p><strong>Sea Room</strong></p></center>
+
+                                <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  " >
+                                    <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  ">
+                                        <div style='float: left; margin: 5px;width:370px;'
+                                             class="m-2 row col-lg-3 form-floating"> <button class="custom-btn btn-5"><span>Reservar</span></button> 
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <br><br>
+
+                        </div>
+                        <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  " >
+                            <img src="resources/habitacion2.jpg">
+                            <center><p><strong>Tree Room</strong></p></center>
+
+                            <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  " >
+                                <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  ">
+                                    <div style='float: left; margin: 5px;width:370px;'
+                                         class="m-2 row col-lg-3 form-floating"> <button class="custom-btn btn-5"><span>Reservar</span></button> 
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  " >
+                            <img src="resources/habitacion3.jpg">
+                            <center><p><strong>Nature Room</strong></p></center>
+
+                            <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  " >
+                                <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  ">
+                                    <div style='float: left; margin: 5px;width:370px;'
+                                         class="m-2 row col-lg-3 form-floating"> <button class="custom-btn btn-5"><span>Reservar</span></button> 
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <!-- Botones -->
+
+
+
+                        <!-- comment <div style='float: left; margin: 5px;width:1050px; height: 300px; ' class=" row col-lg-12 form-floating  " >
+                        <!-- comment <img src="resources/habitacion3.jpg">
+                        <center><p><strong>Nature Room</strong></p></center>
+
+                        <!-- comment<center><p><strong>“Lo mejor de una casa con lo mejor de un hotel ”</strong></p></center>
+
+                        <center><p>Un hotel boutique sólo para adultos, en el que la calidad, la belleza del lugar y la calidez presentan a México de manera íntima y sublime.</p></center> 
+
+
+                    </div>-->
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>            
+        </div>
+
+        <br>
+        <br><br>
+        <footer class=" pie-pagina text-black container-fluid text-center "">
+            <div class=" col-md-12 row">
+                <div class="col-md-4">
+                    <a>
+                        <center><img style="width: 250px; height: 250px;" src="resources/oasis_logo-removebg-preview.png"></center>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Atención a Clientes</h3>
+                    <p>reservaciones@hoteloasis.com</p>
+                    <p>Si cuenta con una reserva vigente,puede hacer aquí</p>
+                    <div style='float: left; margin: 5px;width:370px; ' class=" row col-lg-3 form-floating  ">
+                        <div style='float: left; margin: 5px;width:370px;'
+                             class="m-2 row col-lg-3 form-floating"> <button class="custom-btn1 btn-51"><span>Check IN</span></button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>SIGUENOS</h2>
+                    <a href="https://www.facebook.com/pg/%C3%93pticas-Qualit%C3%A9-104981465439101/posts/"><img src="resources/facebook.png" width="40" height="40"/></a>
+                    <a href="https://api.whatsapp.com/send?phone=526937625&app=facebook&entry_point=page_cta"><img src="resources/whatsapp.png" width="40" height="40"/></a>
+                </div>
+            </div>
+        </footer> 
+
+        <script src="Menu/Despliegue.js"></script>
+        <script src="Menu/Codigo.js"></script>
+        <script src="style/js/bootstrap.bundle.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/gft/gft.js" ></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    </body>
+</html>
